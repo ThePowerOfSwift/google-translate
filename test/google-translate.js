@@ -7,6 +7,12 @@ collection.push({
 	test: function() {
 		wru.assert("Function exists", typeof googleTranslate == "function");
 
+		googleTranslate("Hello world", {from: "en", to: "de"}, wru.async(function (error, result, others) {
+			if (error) console.log(error.stack);
+			wru.assert("translate (en -> de)", result == "Hallo Welt");
+			wru.assert(error, !error);
+		}));
+
 		googleTranslate("This need for translation", {from: "en", to: "ru"}, wru.async(function (error, result, others) {
 			if (error) console.log(error.stack);
 			wru.assert("translate (en -> ru)", result == "Это необходимо для перевода");
