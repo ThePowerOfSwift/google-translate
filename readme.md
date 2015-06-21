@@ -10,7 +10,6 @@ googleTranslate(text, {from?: code, to: code});
 ```
 **Parameters:**  
 `text` - source translating text  
-`options`
 **Options:**  
 `from` - language code for source text (default: "en")  
 `to` - destination language code  
