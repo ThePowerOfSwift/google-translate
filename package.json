@@ -1,5 +1,5 @@
 {
-  "name": "@iamthes/google-translate",
+  "name": "google-translate",
   "version": "1.0.0",
   "description": "Translate text using translate.google.com directly (without API key).",
   "main": "index.js",
