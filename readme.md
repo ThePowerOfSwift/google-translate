@@ -1,5 +1,7 @@
 google-translate
 ----------------
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/unlight/google-translate.svg)](https://greenkeeper.io/)
 Translate text using translate.google.com directly (without API key).
 
 
